@@ -1,0 +1,67 @@
+.mainArticles {
+    background: rgb(255, 159, 28);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 159, 28, 1) 0%,
+      rgba(231, 29, 54, 1) 100%
+    );
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "header header button"
+      ". . nav"
+      "sectionFirst sectionFirst sectionFirst"
+      "sectionSecond sectionSecond sectionSecond"
+      "sectionThird sectionThird sectionThird"
+      "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 10vh 1fr 1fr 1fr 10vh;
+    &__section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &--first {
+        grid-area: sectionFirst;
+      }
+      &--second {
+        grid-area: sectionSecond;
+      }
+      &--third {
+        grid-area: sectionThird;
+      }
+      &-h2 {
+        font-size: 21px;
+        font-family: "Permanent Marker", cursive;
+        color: #e71d36;
+        text-shadow: 2px 3px 0#011627;
+      }
+      &-photo {
+        margin: 0 5px;
+        width: 100%;
+        height: 20vh;
+        border-radius: 5%;
+        &--manhattan {
+          background-image: url(/src/assets/img/manhattan.jpg);
+          background-size: cover;
+          background-position: top center;
+        }
+        &--perkz {
+          background-image: url(/src/assets/img/perkz.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+        &--javascript {
+          background-image: url(/src/assets/img/javascript.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+        }
+      }
+      &-article {
+        padding: 10px;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+  }

@@ -7,3 +7,10 @@ import '../scss/main.scss';
 /* place your code below */
 
 console.log('HELLO 🚀')
+
+const button = document.querySelector(".buttonMenu--js");
+const navigation = document.querySelector(".navigation--js");
+
+button.addEventListener("click", () => {
+  navigation.classList.toggle("navigation--open");
+});

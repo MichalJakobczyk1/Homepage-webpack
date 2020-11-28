@@ -1,0 +1,50 @@
+.buttonMenu {
+    grid-area: button;
+    position: relative;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background-color: #e71d36;
+    border: 2px solid #011627;
+    border-radius: 5px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -2px;
+      display: block;
+      background-color: #ff9f1c;
+      width: 50px;
+      height: 14px;
+      border-top: 2px solid #011627;
+      border-bottom: 2px solid #011627;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 26px;
+      left: -2px;
+      display: block;
+      width: 50px;
+      height: 14px;
+      background-color: #ff9f1c;
+      border-top: 2px solid #011627;
+      border-bottom: 2px solid #011627;
+    }
+  }
+
+  .navigation {
+    display: none;
+    &__link {
+    }
+    &--open {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-area: nav;
+      font-size: 16px;
+      font-family: "Permanent Marker", cursive;
+      color: #e71d36;
+      text-shadow: 1px 1px 0#011627;
+    }
+  }
