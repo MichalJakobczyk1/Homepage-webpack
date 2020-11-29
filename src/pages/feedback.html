@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link href="../../fontello/css/fontello.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../../fontello/css/fontello.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
     <main class="mainFeedback">
@@ -53,7 +57,8 @@
               <label class="form__label">
                 Phone Number
                 <input
-                  type="text"
+                  pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$"
+                  type="tel"
                   class="form__item"
                   placeholder="Write your phone number..."
                   name="PhoneNumber"
@@ -66,7 +71,7 @@
               <label class="form__label">
                 E-mail
                 <input
-                  type="text"
+                  type="email"
                   class="form__item"
                   placeholder="Write your E-mail..."
                   name="E-mail"
@@ -123,6 +128,7 @@
               <label class="form__label">
                 Postal Code
                 <input
+                  pattern="([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2})"
                   type="text"
                   class="form__item"
                   placeholder="Write your Postal Code..."
@@ -150,26 +156,28 @@
         <fieldset class="form__fieldset">
           <legend>
             Your opinion
-            
-        <p>
-          <label for="ocena" class="form__label">How do you like my page</label>
-          <input
-            class="form__item"
-            type="range"
-            min="0"
-            max="100"
-            step="10"
-            id="opinion"
-            name="opinion"
-          />
-        </p>
 
-        <p>
-          <label for="comment" class="form__label">Leave me a comment</label>
-          <textarea name="comment" id="comment"></textarea>
-        </p>
+            <p>
+              <label for="ocena" class="form__label"
+                >How do you like my page</label
+              >
+              <input
+                class="form__item"
+                type="range"
+                min="0"
+                max="100"
+                step="10"
+                id="opinion"
+                name="opinion"
+              />
+            </p>
 
-
+            <p>
+              <label for="comment" class="form__label"
+                >Leave me a comment</label
+              >
+              <textarea name="comment" id="comment"></textarea>
+            </p>
           </legend>
         </fieldset>
       </form>

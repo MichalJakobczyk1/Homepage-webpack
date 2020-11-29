@@ -14,7 +14,7 @@
       ". greetings ."
       ". . ."
       "footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 26%;
     grid-template-rows: 10% 10% 1fr 30% 1fr 10%;
     &__header {
       grid-area: header;

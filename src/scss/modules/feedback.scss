@@ -1,19 +1,36 @@
 .mainFeedback {
-    background: rgb(255, 159, 28);
-    background: linear-gradient(
-      180deg,
-      rgba(255, 159, 28, 1) 0%,
-      rgba(231, 29, 54, 1) 100%
-    );
-    min-height: 100vh;
-    display: grid;
-    grid-template-areas:
-      "header header button"
-      ". . nav"
-      "sectionFirst sectionFirst sectionFirst"
-      "sectionSecond sectionSecond sectionSecond"
-      "sectionThird sectionThird sectionThird"
-      "footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 10vh 10vh 1fr 1fr 1fr 10vh;
+  background: rgb(255, 159, 28);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 159, 28, 1) 0%,
+    rgba(231, 29, 54, 1) 100%
+  );
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header button"
+    ". . nav"
+    "form form form"
+    "footer footer footer";
+  grid-template-columns: 1fr 1fr 26%;
+  grid-template-rows: 10vh 10vh 1fr 10vh;
+}
+
+.form {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__fieldset {
+   
   }
+
+  &__label {
+    display: block;
+  }
+
+  &__item {
+    display: block;
+  }
+}

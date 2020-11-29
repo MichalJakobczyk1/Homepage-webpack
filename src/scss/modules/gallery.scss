@@ -20,7 +20,7 @@
       ". photo8 photo8 photo8 ."
       ". photo9 photo9 photo9 ."
       "footer footer footer footer footer";
-    grid-template-columns: 5% 1px 2fr 1fr 5%;
+    grid-template-columns: 5% 1px 2fr 21% 5%;
     grid-template-rows: 10vh 10vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 40vh 10%;
     row-gap: 16px;
     &__photo {

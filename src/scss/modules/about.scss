@@ -13,7 +13,7 @@
       "photo photo photo"
       "text text text"
       "footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 26%;
     grid-template-rows: 10% 10% 30% 1fr 10%;
     &__photo {
       grid-area: photo;
