@@ -23,10 +23,11 @@
 
       <header class="main__header">Feedback</header>
 
-      <form class="form">
+      <form class="form" action="https://dev.cotenfrontend.pl">
         <fieldset class="form__fieldset">
-          <legend>
+          <legend class="form__legend">
             Informations & Contact
+          </legend>
             <p>
               <label class="form__label">
                 Name
@@ -83,8 +84,9 @@
         </fieldset>
 
         <fieldset class="form__fieldset">
-          <legend>
+          <legend class="form__legend">
             Adress
+          </legend>
             <p>
               <label class="form__label">
                 Country
@@ -154,9 +156,9 @@
         </fieldset>
 
         <fieldset class="form__fieldset">
-          <legend>
+          <legend class="form__legend">
             Your opinion
-
+          </legend>
             <p>
               <label for="ocena" class="form__label"
                 >How do you like my page</label
@@ -180,6 +182,16 @@
             </p>
           </legend>
         </fieldset>
+
+        <p>
+          <label class="form__label">
+            <input 
+            class="form__item"
+            type="submit"
+            id="submit" 
+            name="submit"/>
+          </label>
+        </p>
       </form>
 
       <footer class="footer">
